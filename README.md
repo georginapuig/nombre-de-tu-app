@@ -4,9 +4,9 @@
 * [Technologies](#technologies)
 * [Illustrations](#illustrations)
 * [Setup](#setup)
-	
+
 ## Technologies
-Project is created with: 
+Project is created with:
 - React
 - CSS
 
@@ -14,8 +14,9 @@ Project is created with:
 
 ![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/1.png)
 
-### Downloaded image
 ![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/2.png)
+
+![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/3.png)
 
 ## Setup
 
@@ -23,9 +24,8 @@ Project is created with:
 npm install
 ```
 
-To start 
+To start
 
 ```bash
 npm start
 ```
-
