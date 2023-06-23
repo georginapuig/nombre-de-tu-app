@@ -4,7 +4,7 @@ import './Popup.css';
 export default function Popup({
   title,
   subtitle,
-  src,
+  children,
   formFields,
   showConsent,
   handleBtnClick,
@@ -29,9 +29,9 @@ export default function Popup({
         </span>
       </div>
       <h3 className='popup__subtitle'>{subtitle}</h3>
-      <img className='popup__img' src={src} alt='Game' />
+      {children}
 
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         {formFields.map((field, index) => (
           <input
             key={index}
@@ -48,7 +48,9 @@ export default function Popup({
             Data collection consent
           </label>
         )}
-        <button type='submit'>Enviar</button>
+        <button className='button__send' type='submit'>
+          Enviar
+        </button>
       </form>
     </div>
   );

@@ -8,7 +8,7 @@
   "videoPopup": {
     "title": "Pop-up de video",
     "subtitle": "Mira este video interesante",
-    "videoUrl": "ruta/al/video.mp4",
+    "videoUrl": "https://www.youtube.com/embed/6sZO40TPZmc",
     "formFields": ["email", "name"],
     "showConsent": false
   }
