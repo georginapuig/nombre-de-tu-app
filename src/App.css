@@ -11,57 +11,19 @@
   height: 100vh;
 }
 
+.container {
+  position: absolute;
+  z-index: 0;
+}
+
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.634);
+}
+
 .main__title {
   font-family: 'Play', sans-serif;
   font-size: 3rem;
   width: 70%;
   text-align: center;
   margin-bottom: 3rem;
-}
-
-.btn--play,
-.btn--video {
-  cursor: pointer;
-  width: 13.5rem;
-  height: 4.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  border-radius: 50px;
-  margin-bottom: 1.7rem;
-  padding: 0 1rem;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: bold;
-  font-family: inherit;
-  transition: .3s;
-}
-
-.btn--play {
-  background: white;
-  color: rgb(56, 30, 168);
-  border: none;
-}
-
-.btn--video {
-  background: rgba(156, 156, 156, 0.165);
-  color: rgb(156, 156, 156);
-  border: 1px solid rgb(156, 156, 156);
-}
-
-.btn__img--play {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-right: .5rem;
-}
-
-.btn__img--video {
-  width: 2.75rem;
-  height: 2.75rem;
-  margin-right: .75rem;
-}
-
-.btn__title {
-  margin-top: 5px;
 }

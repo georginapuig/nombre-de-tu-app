@@ -1,0 +1,15 @@
+{
+  "gamePopup": {
+    "title": "Pop-up de juego",
+    "subtitle": "¡Juega a la tragamonedas!",
+    "formFields": ["email", "name", "phone", "gender"],
+    "showConsent": true
+  },
+  "videoPopup": {
+    "title": "Pop-up de video",
+    "subtitle": "Mira este video interesante",
+    "videoUrl": "ruta/al/video.mp4",
+    "formFields": ["email", "name"],
+    "showConsent": false
+  }
+}
