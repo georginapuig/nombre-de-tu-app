@@ -37,7 +37,7 @@
 .main__title {
   width: 40%;
   font-family: 'Play', sans-serif;
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   margin-bottom: 3rem;
 }
 
@@ -48,5 +48,21 @@
 @media only screen and (max-width: 992px) {
   .cards {
     display: none;
+  }
+
+  .main__title {
+    width: 90%;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    align-items: center;
   }
 }

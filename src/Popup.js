@@ -21,7 +21,10 @@ export default function Popup({
 
   return (
     <div className='popup'>
-      <h2 className='popup__title'>{title}</h2>
+      <div>
+        <h2 className='popup__title'>{title}</h2>
+        <span>x</span>
+      </div>
       <h3 className='popup__subtitle'>{subtitle}</h3>
       <img className='popup__img' src={src} alt='Game' />
 
