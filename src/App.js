@@ -53,6 +53,7 @@ const App = () => {
   const data = require('./popupConfig.json');
   const [btnState, setBtnState] = useState(false);
   const imgIndex = btnState ? { zIndex: -7 } : null;
+
   const handleBtnClick = (e) => {
     setBtnState((prev) => !prev);
   };
@@ -69,7 +70,9 @@ const App = () => {
         </div>
       </div>
 
-      {btnState && <Popup {...data.gamePopup} src={play} />}
+      {btnState && (
+        <Popup {...data.gamePopup} src={play} handleBtnClick={handleBtnClick} />
+      )}
       {/*  <VideoPopup {...popupConfig.videoPopup} /> */}
     </main>
   );

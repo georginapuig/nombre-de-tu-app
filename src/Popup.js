@@ -7,6 +7,7 @@ export default function Popup({
   src,
   formFields,
   showConsent,
+  handleBtnClick,
 }) {
   const [formData, setFormData] = useState({});
 
@@ -23,7 +24,9 @@ export default function Popup({
     <div className='popup'>
       <div>
         <h2 className='popup__title'>{title}</h2>
-        <span>x</span>
+        <span className='popup-x' onClick={handleBtnClick}>
+          x
+        </span>
       </div>
       <h3 className='popup__subtitle'>{subtitle}</h3>
       <img className='popup__img' src={src} alt='Game' />
