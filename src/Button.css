@@ -20,8 +20,9 @@
 
 .btn--play {
   background: white;
-  color: rgb(56, 30, 168);
+  color: #631ea8;
   border: none;
+  margin-right: 1.5rem;
 }
 
 .btn--video {

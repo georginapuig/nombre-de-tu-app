@@ -3,7 +3,7 @@ import './App.css';
 
 import play from './slot-machine.png';
 import video from './video-chat.png';
-import slot from './slot.png';
+import cards from './cards.png';
 
 import Button from './Button';
 import Popup from './Popup';
@@ -52,18 +52,21 @@ import Popup from './Popup';
 const App = () => {
   const data = require('./popupConfig.json');
   const [btnState, setBtnState] = useState(false);
-
+  const imgIndex = btnState ? { zIndex: -7 } : null;
   const handleBtnClick = (e) => {
     setBtnState((prev) => !prev);
   };
 
   return (
     <main className={btnState ? 'main black-bg' : 'main'}>
-      <div className='container' style={btnState ? { zIndex: -7 } : null}>
+      <img className='cards' src={cards} alt='cards' style={imgIndex} />
+      <div className='container' style={imgIndex}>
         <h1 className='main__title'>BEST ONLINE SLOT MACHINE</h1>
 
-        <Button action={'play'} src={play} handleBtnClick={handleBtnClick} />
-        <Button action={'video'} src={video} />
+        <div className='btn-container'>
+          <Button action={'play'} src={play} handleBtnClick={handleBtnClick} />
+          <Button action={'video'} src={video} />
+        </div>
       </div>
 
       {btnState && <Popup {...data.gamePopup} src={play} />}
