@@ -1,4 +1,4 @@
-# slot machine poopup.
+# slot machine popup.
 
 ## Table of contents
 * [Technologies](#technologies)
