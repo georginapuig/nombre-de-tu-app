@@ -22,13 +22,15 @@ export default function Popup({
 
   return (
     <div className='popup'>
+      <div className='popup-x'>
+        <span onClick={handleBtnClick}>x</span>
+      </div>
+
       <div>
         <h2 className='popup__title'>{title}</h2>
-        <span className='popup-x' onClick={handleBtnClick}>
-          x
-        </span>
+        <h3 className='popup__subtitle'>{subtitle}</h3>
       </div>
-      <h3 className='popup__subtitle'>{subtitle}</h3>
+
       {children}
 
       <form className='form' onSubmit={handleSubmit}>

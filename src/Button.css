@@ -19,7 +19,7 @@
 
 .btn--play {
   background: white;
-  color: #631ea8;
+  color: var(--main-color);
   border: none;
   margin-right: 1.5rem;
 }

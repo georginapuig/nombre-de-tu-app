@@ -66,7 +66,7 @@
 
 iframe {
   width: 100%;
-  min-height: 340px;
+  min-height: 320px;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -90,5 +90,11 @@ iframe {
 
   .container {
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  iframe {
+    min-height: 220px;
   }
 }
