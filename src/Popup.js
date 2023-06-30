@@ -8,6 +8,7 @@ export default function Popup({
   formFields,
   showConsent,
   handleBtnClick,
+  popupClass,
 }) {
   const [formData, setFormData] = useState({});
 
@@ -21,39 +22,43 @@ export default function Popup({
   };
 
   return (
-    <div className='popup'>
+    <div className={`popup-${popupClass}`}>
       <div className='popup-x'>
         <span onClick={handleBtnClick}>x</span>
       </div>
 
-      <div>
-        <h2 className='popup__title'>{title}</h2>
-        <h3 className='popup__subtitle'>{subtitle}</h3>
+      <div className='popup-container'>
+        <div className='popup__text-container'>
+          <h2 className='popup__title'>{title}</h2>
+          <h3 className='popup__subtitle'>{subtitle}</h3>
+        </div>
+
+        {children}
+
+        <div className={`popup__${popupClass}-form-container`}>
+          <form className='form' onSubmit={handleSubmit}>
+            {formFields.map((field, index) => (
+              <input
+                key={index}
+                type={field}
+                name={field}
+                placeholder={field}
+                value={formData[field] || ''}
+                onChange={handleInputChange}
+              />
+            ))}
+            {showConsent && (
+              <label>
+                <input type='checkbox' name='consent' />
+                Data collection consent
+              </label>
+            )}
+            <button className='button__send' type='submit'>
+              Enviar
+            </button>
+          </form>
+        </div>
       </div>
-
-      {children}
-
-      <form className='form' onSubmit={handleSubmit}>
-        {formFields.map((field, index) => (
-          <input
-            key={index}
-            type={field}
-            name={field}
-            placeholder={field}
-            value={formData[field] || ''}
-            onChange={handleInputChange}
-          />
-        ))}
-        {showConsent && (
-          <label>
-            <input type='checkbox' name='consent' />
-            Data collection consent
-          </label>
-        )}
-        <button className='button__send' type='submit'>
-          Enviar
-        </button>
-      </form>
     </div>
   );
 }

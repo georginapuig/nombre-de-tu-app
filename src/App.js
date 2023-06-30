@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import slot from './slot-machine.jpg';
 import play from './slot-machine.png';
 import video from './video-chat.png';
 import cards from './cards.png';
@@ -35,15 +36,22 @@ const App = () => {
       </div>
 
       {btnPlay && (
-        <Popup {...data.gamePopup} src={play} handleBtnClick={handlePlayClick}>
-          <img className='popup__img' src={play} alt='Game' />
+        <Popup
+          {...data.gamePopup}
+          src={play}
+          handleBtnClick={handlePlayClick}
+          popupClass={'play'}>
+          <div className='popup__img-container'>
+            <img className='popup__img' src={slot} alt='Game' />
+          </div>
         </Popup>
       )}
       {btnVideo && (
         <Popup
           {...data.videoPopup}
           src={video}
-          handleBtnClick={handleVideoClick}>
+          handleBtnClick={handleVideoClick}
+          popupClass={'video'}>
           <iframe
             title={data.videoPopup.subtitle}
             width='auto'

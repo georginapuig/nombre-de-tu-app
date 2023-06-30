@@ -1,4 +1,5 @@
-.popup {
+.popup-video,
+.popup-play {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +13,35 @@
   border: 1px solid white;
   box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem var(--main-color), 0 0 0.5rem var(--main-color), 0 0 .7rem var(--main-color), inset 0 0 .6rem var(--main-color);
   z-index: 2;
+}
+
+.popup-play {
+  width: fit-content
+}
+
+.popup-play .popup-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.popup-play .popup__img-container {
+  order: 1;
+  width: 50%;
+}
+
+.popup-play .popup__text-container {
+  order: 2;
+  width: 50%;
+}
+
+.popup-play .popup__play-form-container {
+  order: 2;
+  width: 50%;
+}
+
+.popup-container {
+  width: 100%;
 }
 
 .popup__title {
@@ -45,7 +75,6 @@
 }
 
 .form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
@@ -79,14 +108,19 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .popup {
+  .popup-video, .popup-play {
     width: 60%;
+    overflow: scroll;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .popup {
+  .popup-video, .popup-play {
     width: 75%;
     padding: 1rem 1rem 2rem;
+  }
+
+  .form {
+    margin-top: .5rem;
   }
 }
