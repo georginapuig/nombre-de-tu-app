@@ -5,10 +5,11 @@
   align-items: center;
   position: fixed;
   width: 35%;
-  background-color: white;
+  background-color: black;
+  color: white;
   border-radius: 1rem;
-  color: #392589;
-  padding: 2rem;
+  border: 1px solid white;
+  padding: 4rem 3rem;
   z-index: 2;
 }
 
@@ -21,7 +22,7 @@
   font-size: 1.15rem;
   margin: .5rem 0 0 0;
   font-weight: 400;
-  color: #7a7a7a;
+  color: #9f9f9f;
 }
 
 .popup__img {
@@ -38,7 +39,7 @@
 }
 
 .form {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
@@ -47,12 +48,14 @@
 .form  input {
   border: 1px solid rgb(200, 200, 200);
   border-radius: 8px;
-  padding: .6rem .5rem;
-  margin-bottom: .5rem;
+  padding: .8rem .5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: white;
 }
 
 .form  input::placeholder {
-  color: #392589;
+  color: white;
   text-transform: capitalize;
 }
 
@@ -63,9 +66,10 @@
   font-weight: bold;
   outline: none;
   border: none;
-  border-radius: 6px;
-  padding: 1rem 2rem;
+  border-radius: 8px;
+  padding: 1.1rem 2rem;
   margin-top: .5rem;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 992px) {

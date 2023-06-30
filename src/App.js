@@ -46,8 +46,8 @@ const App = () => {
           handleBtnClick={handleVideoClick}>
           <iframe
             title={data.videoPopup.subtitle}
-            width='426'
-            height='240'
+            width='auto'
+            frameborder='0'
             src={data.videoPopup.videoUrl}></iframe>
         </Popup>
       )}
