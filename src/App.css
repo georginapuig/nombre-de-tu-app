@@ -14,9 +14,10 @@
 
 .cards {
   position: absolute;
-  height: 140%;
-  top: -10rem;
-  right: -15rem;
+  width: 75%;
+  height: auto;
+  top: -5rem;
+  right: -10rem;
   z-index: 0;
 
 }
@@ -35,11 +36,27 @@
 }
 
 .main__title {
-  width: 40%;
+  width: 55%;
   font-family: 'Play', sans-serif;
-  font-size: 4.4rem;
+  font-size: 4.6rem;
   margin-bottom: 3rem;
   margin-top: 0;
+}
+
+.main__title--gold {
+  background-image: linear-gradient(
+	to right,
+	#462523 0,
+       	#cb9b51 22%,
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .btn-container {

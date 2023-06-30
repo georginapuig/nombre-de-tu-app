@@ -9,47 +9,6 @@ import Button from './Button';
 import Popup from './Popup';
 import usePopup from './hooks/usePopup';
 
-// const VideoPopup = ({ title, subtitle, videoUrl, formFields, showConsent }) => {
-//   const [formData, setFormData] = useState({});
-
-//   const handleInputChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log(formData);
-//   };
-
-//   return (
-//     <div className='popup'>
-//       <h2>{title}</h2>
-//       <h3>{subtitle}</h3>
-//       <video src={videoUrl} controls />
-
-//       <form onSubmit={handleSubmit}>
-//         {formFields.map((field, index) => (
-//           <input
-//             key={index}
-//             type={field}
-//             name={field}
-//             placeholder={field}
-//             value={formData[field] || ''}
-//             onChange={handleInputChange}
-//           />
-//         ))}
-//         {showConsent && (
-//           <label>
-//             <input type='checkbox' name='consent' />
-//             Consentimiento de recopilación de datos
-//           </label>
-//         )}
-//         <button type='submit'>Enviar</button>
-//       </form>
-//     </div>
-//   );
-// };
-
 const App = () => {
   const [btnPlay, handlePlayClick] = usePopup(false);
   const [btnVideo, handleVideoClick] = usePopup(false);
@@ -61,7 +20,9 @@ const App = () => {
     <main className={btnPlay || btnVideo ? 'main black-bg' : 'main'}>
       <img className='cards' src={cards} alt='cards' style={imgIndex} />
       <div className='container' style={imgIndex}>
-        <h1 className='main__title'>BEST ONLINE SLOT MACHINE</h1>
+        <h1 className='main__title'>
+          <span className='main__title--gold'>BEST </span> ONLINE SLOT MACHINE
+        </h1>
 
         <div className='btn-container'>
           <Button action={'play'} src={play} handleBtnClick={handlePlayClick} />
@@ -82,14 +43,12 @@ const App = () => {
         <Popup
           {...data.videoPopup}
           src={video}
-          handleBtnClick={handleVideoClick}
-        >
+          handleBtnClick={handleVideoClick}>
           <iframe
             title={data.videoPopup.subtitle}
             width='426'
             height='240'
-            src={data.videoPopup.videoUrl}
-          ></iframe>
+            src={data.videoPopup.videoUrl}></iframe>
         </Popup>
       )}
     </main>
