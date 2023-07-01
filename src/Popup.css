@@ -58,7 +58,7 @@
 
 .popup__subtitle {
   font-size: 1.15rem;
-  margin: .5rem 0 0 0;
+  margin: .5rem 0 0;
   font-weight: 400;
   color: #9f9f9f;
   text-align: center;
@@ -94,6 +94,7 @@
   margin-bottom: 1rem;
   background-color: transparent;
   color: white;
+  font-size: 1.05rem;
 }
 
 .form  input::placeholder {

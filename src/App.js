@@ -55,7 +55,7 @@ const App = () => {
           <iframe
             title={data.videoPopup.subtitle}
             width='auto'
-            frameborder='0'
+            frameBorder='0'
             src={data.videoPopup.videoUrl}></iframe>
         </Popup>
       )}
