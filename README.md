@@ -14,15 +14,17 @@ Project is created with:
 
 ![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/1.png)
 
-![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/2.png)
+<p float="left">
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/2.png" width="33%" />
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/3.png" width="33%" />
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/4.png" width="33%" />  
+</p>
 
-![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/3.png)
+<p float="left">
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/5.png" width="33%" />
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/6.png" width="33%" />
+</p>
 
-![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/4.png)
-
-![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/5.png)
-
-![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/6.png)
 ## Setup
 
 ```bash
