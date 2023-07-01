@@ -18,6 +18,11 @@ Project is created with:
 
 ![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/3.png)
 
+![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/4.png)
+
+![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/5.png)
+
+![alt text](https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/6.png)
 ## Setup
 
 ```bash
