@@ -1,13 +1,13 @@
 {
   "gamePopup": {
-    "title": "Pop-up de juego",
-    "subtitle": "¡Juega a la tragamonedas!",
+    "title": "To get your coupon code, PLAY!",
+    "subtitle": "Try your luck!",
     "formFields": ["email", "name", "phone", "gender"],
     "showConsent": true
   },
   "videoPopup": {
-    "title": "Pop-up de video",
-    "subtitle": "Mira este video interesante",
+    "title": "Unlock a special offer now",
+    "subtitle": "Enter your email & start playing to win a discount of up to 50% on your next order. 🥳",
     "videoUrl": "https://www.youtube.com/embed/-n8J6ftuHVU?autoplay=1&showinfo=0&mute=1",
     "formFields": ["email", "name"],
     "showConsent": false

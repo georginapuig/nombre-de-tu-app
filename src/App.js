@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import slot from './slot-machine.jpg';
+import slot from './slot.png';
 import play from './slot-machine.png';
 import video from './video-chat.png';
 import cards from './cards.png';

@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .cards {
@@ -97,5 +97,11 @@ iframe {
   iframe {
     min-height: 220px;
     margin-top: .75rem;
+  }
+}
+
+@media only screen and (max-height: 480) {
+  iframe {
+    min-height: 220px;
   }
 }
