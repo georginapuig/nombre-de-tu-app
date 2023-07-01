@@ -1,4 +1,5 @@
 # slot machine popup.
+responsive modals
 
 ## Table of contents
 * [Technologies](#technologies)
