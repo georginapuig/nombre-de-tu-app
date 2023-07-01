@@ -40,10 +40,6 @@
 .popup-play .popup__play-form-container {
   order: 3;
   width: 100%;
-  /* display: flex;
-  justify-content: end;
-  top: -8rem;
-  position: relative; */
 }
 
 .popup-container {
@@ -118,6 +114,13 @@
 @media only screen and (max-width: 992px) {
   .popup-video, .popup-play {
     width: 60%;
+    height: 100%;
+    overflow: initial;
+  }
+
+  .popup-video, .popup-play {
+    height: auto;
+    overflow: initial;
   }
 
   .popup__title {

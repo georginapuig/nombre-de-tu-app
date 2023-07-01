@@ -76,6 +76,10 @@ iframe {
     display: none;
   }
 
+  .main {
+    height: 100%;
+  }
+
   .main__title {
     width: 90%;
     font-size: 3.5rem;
