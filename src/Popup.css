@@ -160,6 +160,10 @@
 
 @media only screen and (max-height: 680px) {
   .popup-video, .popup-play {
-    overflow: scroll;
+    margin-top: 23rem;
+  }
+
+  .popup-video {
+    margin-top: 15rem;
   }
 }
