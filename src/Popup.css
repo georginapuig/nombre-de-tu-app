@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  margin: 3rem auto;
   width: 35%;
   background-color: black;
   color: white;
@@ -123,11 +123,11 @@
 
 @media only screen and (max-width: 480px) {
    .popup-play {
-    width: 90%;
+    width: 85%;
   }
 
   .popup-video, .popup-play {
-    width: 85%;
+    width: 80%;
     padding: 1rem 1rem 2rem;
   }
 
