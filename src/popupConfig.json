@@ -6,7 +6,7 @@
     "showConsent": true
   },
   "videoPopup": {
-    "title": "Unlock a special offer now",
+    "title": "Unlock a special offer!",
     "subtitle": "Enter your email & start playing to win a discount of up to 50% on your next order. 🥳",
     "videoUrl": "https://www.youtube.com/embed/-n8J6ftuHVU?autoplay=1&showinfo=0&mute=1",
     "formFields": ["email", "name"],
