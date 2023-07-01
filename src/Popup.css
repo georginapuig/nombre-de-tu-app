@@ -131,6 +131,16 @@
     padding: 1rem 1rem 2rem;
   }
 
+  .popup__img {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup__subtitle {
+    font-size: 1.2rem;
+    margin: .5rem 0 .5rem;
+  }
+
   .form {
     margin-top: .5rem;
   }
