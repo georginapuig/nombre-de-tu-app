@@ -12,8 +12,12 @@
   overflow: scroll;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .cards {
-  position: absolute;
+  position: fixed;
   width: 75%;
   height: auto;
   top: -5rem;
@@ -22,12 +26,16 @@
 
 }
 
+.h-auto .container {
+  height: 100vh;
+}
+
 .container {
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
+  justify-content: center;
+  position: fixed;
   z-index: 0;
 }
 

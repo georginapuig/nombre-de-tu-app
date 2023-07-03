@@ -17,8 +17,8 @@
 
 .popup-play {
   width: 50%;
-  height: max-content;
-  overflow: scroll;
+  /* height: 100vh;
+  overflow: scroll; */
 }
 
 .popup-play .popup-container {

@@ -18,7 +18,7 @@ const App = () => {
   const imgIndex = btnPlay || btnVideo ? { zIndex: -7 } : null;
 
   return (
-    <main className={btnPlay || btnVideo ? 'main black-bg' : 'main'}>
+    <main className={btnPlay || btnVideo ? 'main black-bg h-auto' : 'main'}>
       <img className='cards' src={cards} alt='cards' style={imgIndex} />
       <div className='container' style={imgIndex}>
         <h1 className='main__title'>

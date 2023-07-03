@@ -17,7 +17,7 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 code {
