@@ -17,6 +17,7 @@ Project is created with:
 
 <p float="left">
   <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/2.png" width="45%" />
+  <img src="https://github.com/georginapuig/slot-machine-poopup/blob/master/src/images/7.png" width="45%" />
 </p>
 
 <p float="left">
