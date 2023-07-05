@@ -12,9 +12,9 @@
   overflow: scroll;
 }
 
-.h-auto {
+/* .h-auto {
   height: auto;
-}
+} */
 
 .cards {
   position: fixed;
