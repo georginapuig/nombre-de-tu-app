@@ -22,6 +22,9 @@
 }
 
 .popup-play popup-x {
+  position: relative;
+  right: -1.5rem;
+  top: -0.25rem;
   padding-bottom: .5rem;
 }
 
