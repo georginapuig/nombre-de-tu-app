@@ -20,14 +20,6 @@
   position: relative;
   padding-top: 1rem;
 }
-
-.popup-play popup-x {
-  position: relative;
-  right: -1.5rem;
-  top: -0.25rem;
-  padding-bottom: .5rem;
-}
-
 .popup-play .popup-container {
   display: flex;
   flex-wrap: wrap;
@@ -102,13 +94,16 @@
 
 .popup__img {
   width: 100%;
-  /* margin-bottom: 2rem; */
 }
 
 .popup-x {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  position: relative;
+  right: -1.3rem;
+  top: -0.25rem;
+  padding-bottom: .5rem;
 }
 
 .popup-x span {
@@ -153,6 +148,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .popup-x {
+    position: initial;
+    padding-bottom: 0;
+  }
   .popup__play-form-container form,
   .popup__img-container,
   .popup-play .popup__img-container,
@@ -189,6 +188,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .popup-play popup-x {
+    position: initial;
+  }
   .popup-play .popup__text-container {
     margin-top: 0;
   }
